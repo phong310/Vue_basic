@@ -1,0 +1,77 @@
+/* @import "./base.css"; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header button {
+  border: none;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: rgb(21, 20, 20);
+  border-radius: 1000px;
+  color: white;
+  font-size: 20px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 225px;
+  height: 225px;
+  background-color: rgb(237, 182, 44);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.date {
+  font-size: 12.5px;
+  /* margin-top: auto; */
+  font-weight: bold;
+}
+.cards-container {
+  display: flex;
+  flex: wrap;
+}
+.main-text {
+  /* Limit text lenght */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.border-title-dialog {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.border-action-dialog {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
